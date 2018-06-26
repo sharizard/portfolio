@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { toElement as scrollToElement } from '../../utils/scroll';
 
 class ScrollToPage extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   scrollToPage() {
     const { pageSelector } = this.props;

@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../../../components/Navigation/NavBar';
+import NavBar from '../../../components/navbar/NavBar';
 import { ScrollToPage } from '../../scroll';
 import SocialIcons from '../../socialIcons/SocialIcons';
 

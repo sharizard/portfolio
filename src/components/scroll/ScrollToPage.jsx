@@ -11,11 +11,12 @@ class ScrollToPage extends Component {
 
   render() {
     const faIcon = this.props.isFinal ? 'fa-chevron-up' : 'fa-chevron-down'; 
+    const color = this.props.isRed ? 'white' : 'red';
     return (
       <div className="scroll-to-next" onClick={(e) => this.scrollToPage()}>
-        <div className="arrow bounce" style={{ color: 'blue' }}>
+        <div className={`arrow bounce ${color}`}>
           <div className="scroll-text">Click Me</div>
-          <button className={`fa ${faIcon} fa-2x`} href="#" />
+          <i className={`fa ${faIcon} fa-2x`} href="#" />
         </div>
       </div>
     );

@@ -4,37 +4,23 @@ import { ScrollToPage } from '../../scroll';
 class AboutPage extends Component {
 
     render() {
-        const colorPrimary = 'black'; 
-        const colorHighlight = 'yellow';
-        const bgPrimary = 'grey'; 
-        const textPrimary = 'black';
         return (
-            <div className="about-page" style={{ backgroundColor: bgPrimary }}>
-                <style jsx="true">
-                    {`
-                    .highlight {
-                        background-color: ${colorHighlight};
-                    }
-                    ::selection {
-                        background-color: ${colorHighlight};
-                    }
-                    `}
-                </style>
+            <div className="about-page">
                 <div className="content-grid">
-                    <h1 style={{ color: 'colorPrimary' }}>About</h1>
+                    <h1>About</h1>
                     <div className="about-wrapper">
-                    <div className="about-content" style={{ color: textPrimary }}>
+                    <div className="about-content">
                         <p>
                         I like and hate <span className="highlight">JavaScript</span> and
                         everything web.
                         </p>
-                        <p className="text-emoji" style={{ color: colorPrimary }}>
+                        <p className="text-emoji">
                         \ (•◡•) /
                         </p>
                     </div>
                     </div>
                 </div>
-                <ScrollToPage isFinal={false} pageSelector=".portfolio-page" />
+                <ScrollToPage isFinal={false} isRed={true} pageSelector=".portfolio-page" />
             </div>
         )
     }

@@ -1,3 +1,5 @@
+@import 'color';
+
 .scroll-to-next {
     cursor: pointer;
   
@@ -5,12 +7,17 @@
       text-align: center;
       margin: 0 auto;
       padding-bottom: 0.5rem;
+      color: $colorPrimary;
   
       .scroll-text {
         text-align: center;
         font-size: 0.5rem;
         margin-bottom: -0.125rem;
       }
+    }
+
+    .white {
+      color: white;
     }
   
     .bounce {

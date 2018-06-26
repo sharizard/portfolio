@@ -1,4 +1,5 @@
 @import 'breakpoints';
+@import 'color';
 
 nav {
   position: fixed;
@@ -18,6 +19,7 @@ nav {
     display: flex;
     flex: 1;
     justify-content: flex-end;
+    color: $colorPrimary;
 
     &__item {
       padding: 0.25rem 0;
@@ -28,7 +30,7 @@ nav {
 
       &:hover {
         cursor: pointer;
-        border-bottom: 2px solid blue;
+        border-bottom: 2px solid $colorPrimary;
       }
     }
   }
